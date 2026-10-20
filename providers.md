@@ -2,6 +2,7 @@
 layout: default
 title: Providers
 nav_order: 5
+permalink: /providers/
 ---
 
 # Providers
