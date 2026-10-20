@@ -6,7 +6,7 @@ repository: Jawuilp/limitcode-docs
 
 remote_theme: just-the-docs/just-the-docs
 
-color_scheme: limitcode
+color_scheme: dark
 search_enabled: true
 heading_anchors: true
 aux_links:
