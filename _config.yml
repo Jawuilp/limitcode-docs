@@ -1,0 +1,23 @@
+title: Limitcode OSS
+description: AI pair programming for Sublime Text.
+baseurl: "/limitcode-docs"
+url: "https://jawuilp.github.io"
+repository: Jawuilp/limitcode-docs
+
+remote_theme: just-the-docs/just-the-docs
+
+color_scheme: limitcode
+search_enabled: true
+heading_anchors: true
+aux_links:
+  "Limitcode on GitHub":
+    - "https://github.com/Jawuilp/Limitcode"
+aux_links_new_tab: true
+footer_content: "Limitcode OSS is licensed under the GNU GPL v3."
+
+back_to_top: true
+back_to_top_text: "Back to top"
+nav_sort: case_insensitive
+
+plugins:
+  - jekyll-seo-tag

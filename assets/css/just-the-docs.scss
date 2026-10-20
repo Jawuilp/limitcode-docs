@@ -1,0 +1,81 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+:root {
+  --limitcode-cyan: #7dd3fc;
+  --limitcode-purple: #c4b5fd;
+  --limitcode-bg: #080b12;
+}
+
+body {
+  background: var(--limitcode-bg);
+}
+
+.hero {
+  padding: 5rem 0 4rem;
+  max-width: 52rem;
+}
+
+.eyebrow {
+  color: var(--limitcode-cyan);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+}
+
+.hero h1 {
+  font-size: clamp(2.8rem, 8vw, 5.4rem);
+  letter-spacing: -.06em;
+  line-height: 1;
+  margin: 1rem 0 1.5rem;
+}
+
+.hero h1 span {
+  color: var(--limitcode-purple);
+}
+
+.hero-copy {
+  color: #a8b2c4;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  max-width: 42rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: 2rem;
+}
+
+.btn {
+  border: 1px solid #334155;
+  border-radius: .35rem;
+  display: inline-block;
+  font-weight: 700;
+  padding: .7rem 1rem;
+  text-decoration: none !important;
+}
+
+.btn-primary {
+  background: var(--limitcode-cyan);
+  border-color: var(--limitcode-cyan);
+  color: #07111c !important;
+}
+
+.btn-secondary {
+  color: #dbeafe !important;
+}
+
+.main-content table {
+  display: table;
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding-top: 3rem;
+  }
+}
