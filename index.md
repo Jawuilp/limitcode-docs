@@ -52,3 +52,4 @@ No hidden filesystem scans. No shell access. No autopilot. You steer the session
 - [Explore the feature set]({{ site.baseurl }}/features/)
 - [Configure providers and models]({{ site.baseurl }}/configuration/)
 - [See all supported providers]({{ site.baseurl }}/providers/)
+- [Compare with Limitcode Pro]({{ site.baseurl }}/limitcode-pro/)

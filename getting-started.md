@@ -15,7 +15,20 @@ permalink: /getting-started/
 
 ## Install from source
 
-Clone the repository into Sublime Text's `Packages` directory:
+### Recommended: Package Control
+
+1. Open the Command Palette in Sublime Text.
+2. Run **Package Control: Install Package**.
+3. Search for **Limitcode** and install it.
+
+Limitcode OSS is published in the [Sublime Package Control
+catalog](https://packagecontrol.io/packages/Limitcode), so Package Control
+will handle the installation and updates.
+
+### Install from source
+
+Clone the repository into Sublime Text's `Packages` directory when you want to
+work from the source tree:
 
 ```powershell
 cd "$env:APPDATA\Sublime Text\Packages"
