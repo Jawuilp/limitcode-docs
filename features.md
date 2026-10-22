@@ -21,7 +21,7 @@ Agent edits land in the buffer first. Sublime Text's diff indicators show what c
 
 ## Provider flexibility
 
-Use hosted providers such as OpenAI, Anthropic, Gemini, DeepSeek, OpenRouter, and Moonshot AI, or connect to local models through Ollama and LM Studio.
+Use hosted providers such as OpenAI, Anthropic, Gemini, DeepSeek, OpenRouter, and Moonshot AI, or connect to local models through Ollama, LM Studio, and Llamafile.
 
 ## LSP feedback
 

@@ -11,7 +11,7 @@ permalink: /getting-started/
 ## Requirements
 
 - Sublime Text 4 or newer
-- An API key for a cloud provider, or a local Ollama/LM Studio installation
+- An API key for a cloud provider, or a local Ollama/LM Studio/Llamafile installation
 
 ## Install from source
 
