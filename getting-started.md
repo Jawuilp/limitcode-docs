@@ -51,6 +51,13 @@ Limitcode only works with files that are already open in the active Sublime Text
 
 Select the code you want to discuss and run **Limitcode: Send to Agent**, or describe the task directly in the chat. Edits are applied to the editor buffer for review. By default, they are not saved to disk until you save the file.
 
+## Try Inline Assist
+
+You can also ask the agent to edit or explain code directly inside your active buffer without switching to the chat:
+1. Select code in any active file (or position your cursor).
+2. Run **Limitcode: Inline Assist** from the Command Palette, the main menu, or by right-clicking.
+3. Type your instruction. Review the live diff preview, then press **Enter** (Accept) or **Esc** (Reject).
+
 ## Optional: install LSP
 
 If the [LSP package](https://packagecontrol.io/packages/LSP) is installed, Limitcode can use its diagnostics after an edit. This is optional and activates automatically when available.

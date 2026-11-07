@@ -9,6 +9,7 @@ permalink: /commands/
 
 Limitcode adds these commands to Sublime Text's Command Palette:
 
+- `Limitcode: Inline Assist`
 - `Limitcode: Open Chat`
 - `Limitcode: New Chat`
 - `Limitcode: Chat History`
@@ -39,6 +40,7 @@ in the user pane:
 
 ```json
 [
+    { "keys": ["ctrl+i"], "command": "limitcode_inline_assist" },
     { "keys": ["ctrl+alt+l"], "command": "limitcode_open_chat" },
     { "keys": ["ctrl+alt+a"], "command": "limitcode_send_to_agent" },
     { "keys": ["ctrl+alt+x"], "command": "limitcode_cancel_request" }

@@ -37,6 +37,7 @@ No hidden filesystem scans. No shell access. No autopilot. You steer the session
 
 ## What is included
 
+- Inline Assist for in-buffer code generation, diff preview, and quick edits
 - Streaming chat inside Sublime Text
 - Persistent conversation history per session
 - Multiple model providers with per-session control
