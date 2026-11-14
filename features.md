@@ -26,7 +26,7 @@ Generate, edit, refactor, and explain code directly inside your active buffer wi
   * **Open in Chat:** Transfers your prompt, code context, and model output into the Chat panel to continue an extended conversation.
   * **Retry:** Re-runs the request with a single click if you want a different variation.
 * **Adaptive Viewport Layout:** Automatically calculates your editor's column width so lines wrap cleanly and never clip horizontally.
-* **Reasoning model support:** Cleanly parses `<think>...</think>` tags from models like DeepSeek-R1 and Nemotron, displaying real-time thought status without cluttering code.
+* **Reasoning model support:** Cleanly parses `<think>...</think>` tags from models like DeepSeek-R1, DeepSeek-V4, and Nemotron, displaying real-time thought status without cluttering code.
 
 ---
 
@@ -38,7 +38,7 @@ Chat with the agent side-by-side with your code in a dedicated Sublime Text view
 
 * **Zero Context Switching:** Keep your code on one side and the conversational agent on the other.
 * **Independent Font Sizing:** Tune the chat font size separately from your editor font (`Limitcode: Increase/Decrease Chat Font Size`).
-* **Image Attachment Support:** Paste images or UI mockups directly from your clipboard into the chat for multimodal models (e.g. GPT-4o, Claude 3.5 Sonnet, Gemini 1.5/2.0).
+* **Image Attachment Support:** Paste images or UI mockups directly from your clipboard into the chat for multimodal models (e.g. GPT-5.5, Claude Sonnet 4, Gemini 3 Flash).
 * **Theme-Aware Status Bar:** Displays the current provider, active model, and conversation token estimates matching your Sublime Text theme.
 
 ---
@@ -74,8 +74,8 @@ Limitcode deliberately constrains the agent's file access tools:
 
 Connect Limitcode to your preferred model provider in seconds:
 
-* **Cloud Providers:** OpenAI (GPT-4o, o1, o3-mini), Anthropic (Claude 3.5/3.7), Google Gemini (Gemini 2.0 Flash/Pro), DeepSeek, OpenRouter, and Moonshot AI (Kimi).
-* **Local & Offline Models:** Full native compatibility with **Ollama**, **LM Studio**, and **Llamafile**. Run private open-source models (Llama 3, DeepSeek-R1, Qwen 2.5) with zero data leaving your machine.
+* **Cloud Providers:** OpenAI (GPT-5.5, GPT-5, o3-mini), Anthropic (Claude 4 / Sonnet 4.5, Claude 3.7 Sonnet), Google Gemini (Gemini 2.5 Pro, Gemini 3 Flash), DeepSeek (DeepSeek-V4, R1), OpenRouter, and Moonshot AI (Kimi).
+* **Local & Offline Models:** Full native compatibility with **Ollama**, **LM Studio**, and **Llamafile**. Run private open-source models (Llama 3.3, DeepSeek-R1, Qwen 2.5) with zero data leaving your machine.
 
 ---
 
