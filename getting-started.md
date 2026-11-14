@@ -61,3 +61,9 @@ You can also ask the agent to edit or explain code directly inside your active b
 ## Optional: install LSP
 
 If the [LSP package](https://packagecontrol.io/packages/LSP) is installed, Limitcode can use its diagnostics after an edit. This is optional and activates automatically when available.
+
+---
+
+## Need help?
+
+If you encounter any issues during setup or want to request a feature, feel free to open an issue on [GitHub Issues](https://github.com/Jawuilp/Limitcode/issues) or join the community on the [Sublime Text Forum](https://forum.sublimetext.com/t/limitcode-ai-pair-programming-for-sublime-text/79034).
