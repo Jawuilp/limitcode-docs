@@ -3,13 +3,15 @@
 
 :root {
   --limitcode-orange: #ff7828;
-  --limitcode-orange-hover: #ff8f45;
-  --limitcode-beige: #f5ebd7;
-  --limitcode-beige-light: #fff8eb;
-  --limitcode-beige-muted: #cbbba6;
+  --limitcode-orange-hover: #ff9147;
+  --limitcode-beige: #fbf2e2;
+  --limitcode-beige-light: #ffffff;
+  --limitcode-beige-muted: #cdbeab;
   --limitcode-bg: #0e0d0b;
-  --limitcode-surface: #181512;
-  --limitcode-border: #332a22;
+  --limitcode-surface: #1d1814;
+  --limitcode-surface-code: #16120f;
+  --limitcode-border: #4d3d30;
+  --limitcode-border-light: #634f3f;
 }
 
 body {
@@ -17,11 +19,68 @@ body {
   color: var(--limitcode-beige) !important;
 }
 
-/* Base typography contrast */
+/* =========================================
+   Sidebar & Search Integration
+   ========================================= */
+.side-bar {
+  background-color: #12100d !important;
+  border-right: 1px solid var(--limitcode-border) !important;
+}
+
+.site-header {
+  background-color: #12100d !important;
+  border-bottom: 1px solid var(--limitcode-border) !important;
+}
+
+.site-title {
+  color: var(--limitcode-beige-light) !important;
+  font-weight: 700 !important;
+}
+
+.site-title:hover {
+  color: var(--limitcode-orange) !important;
+}
+
+.search-input {
+  background-color: var(--limitcode-surface) !important;
+  border: 1px solid var(--limitcode-border) !important;
+  border-radius: 4px !important;
+  color: var(--limitcode-beige) !important;
+}
+
+.search-input:focus {
+  border-color: var(--limitcode-orange) !important;
+}
+
+.search-input::placeholder {
+  color: var(--limitcode-beige-muted) !important;
+  opacity: 0.8;
+}
+
+.nav-list .nav-list-item .nav-list-link {
+  color: var(--limitcode-beige-muted) !important;
+  font-size: 0.92rem;
+}
+
+.nav-list .nav-list-item .nav-list-link:hover {
+  color: var(--limitcode-orange-hover) !important;
+  background-color: rgba(255, 120, 40, 0.06) !important;
+}
+
+.nav-list .nav-list-item .nav-list-link.active {
+  color: var(--limitcode-orange) !important;
+  font-weight: 700 !important;
+  background: rgba(255, 120, 40, 0.12) !important;
+  border-radius: 4px;
+}
+
+/* =========================================
+   Main Content Typography & Contrast
+   ========================================= */
 .main-content {
   color: var(--limitcode-beige) !important;
-  font-size: 1rem;
-  line-height: 1.7;
+  font-size: 1.02rem;
+  line-height: 1.75;
 }
 
 .main-content h1,
@@ -32,21 +91,16 @@ body {
   letter-spacing: -0.02em;
 }
 
+.main-content h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
 .main-content h2 {
   border-bottom: 1px solid var(--limitcode-border);
-  padding-bottom: 0.4rem;
-  margin-top: 2.2rem;
-}
-
-.main-content a {
-  color: var(--limitcode-orange) !important;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: color 0.15s ease;
-}
-
-.main-content a:hover {
-  color: var(--limitcode-orange-hover) !important;
+  padding-bottom: 0.5rem;
+  margin-top: 2.5rem;
+  font-size: 1.55rem;
 }
 
 .main-content p,
@@ -54,76 +108,131 @@ body {
   color: var(--limitcode-beige) !important;
 }
 
-/* Sidebar navigation contrast */
-.nav-list .nav-list-item .nav-list-link {
-  color: var(--limitcode-beige-muted) !important;
-}
-
-.nav-list .nav-list-item .nav-list-link:hover,
-.nav-list .nav-list-item .nav-list-link.active {
+/* Links (excluding buttons) */
+.main-content a:not(.btn) {
   color: var(--limitcode-orange) !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px;
+  font-weight: 500;
+  transition: color 0.15s ease;
 }
 
-.site-title {
-  color: var(--limitcode-beige-light) !important;
+.main-content a:not(.btn):hover {
+  color: var(--limitcode-orange-hover) !important;
 }
 
-/* Inline code and code blocks */
+/* =========================================
+   Buttons (High Specificity Contrast Fix)
+   ========================================= */
+.main-content a.btn,
+.btn {
+  border-radius: 0.4rem !important;
+  display: inline-block !important;
+  font-size: 0.95rem !important;
+  font-weight: 800 !important;
+  padding: 0.75rem 1.35rem !important;
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+/* Primary Button: Black text on bright orange */
+.main-content a.btn-primary,
+.btn-primary {
+  background: var(--limitcode-orange) !important;
+  border: 1px solid var(--limitcode-orange) !important;
+  color: #000000 !important;
+}
+
+.main-content a.btn-primary:hover,
+.btn-primary:hover {
+  background: var(--limitcode-orange-hover) !important;
+  border-color: var(--limitcode-orange-hover) !important;
+  color: #000000 !important;
+  box-shadow: 0 4px 14px rgba(255, 120, 40, 0.4);
+}
+
+/* Secondary Button: Bright cream on elevated surface */
+.main-content a.btn-secondary,
+.btn-secondary {
+  background: #221c17 !important;
+  border: 1px solid var(--limitcode-border-light) !important;
+  color: #fff3e0 !important;
+}
+
+.main-content a.btn-secondary:hover,
+.btn-secondary:hover {
+  background: #2e2620 !important;
+  border-color: var(--limitcode-orange) !important;
+  color: #ffffff !important;
+}
+
+/* =========================================
+   Code & Preformatted Blocks
+   ========================================= */
 code {
-  background: #1c1814 !important;
-  border: 1px solid #3d3126 !important;
+  background: #27201a !important;
+  border: 1px solid var(--limitcode-border-light) !important;
   border-radius: 4px;
-  color: #ffae66 !important;
-  padding: 0.15em 0.4em;
-  font-size: 0.88em;
+  color: #ffbe82 !important;
+  font-family: var(--font-mono, monospace) !important;
+  font-size: 0.88em !important;
+  padding: 0.15em 0.45em !important;
 }
 
 pre code {
-  border: none !important;
   background: transparent !important;
-  color: #f5ebd7 !important;
-  padding: 0;
+  border: none !important;
+  color: var(--limitcode-beige) !important;
+  padding: 0 !important;
 }
 
 div.highlighter-rouge,
 figure.highlight {
-  background: var(--limitcode-surface) !important;
+  background: var(--limitcode-surface-code) !important;
   border: 1px solid var(--limitcode-border) !important;
   border-radius: 6px;
-  margin: 1.2rem 0;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.35);
+  margin: 1.4rem 0;
+  padding: 0.4rem;
 }
 
-/* Tables contrast */
+/* =========================================
+   Tables (Crisp Contrast & Visible Striping)
+   ========================================= */
 .main-content table {
-  border-collapse: collapse;
-  display: table;
-  margin: 1.5rem 0;
-  width: 100%;
-  border: 1px solid var(--limitcode-border);
+  border: 1px solid var(--limitcode-border) !important;
+  border-collapse: collapse !important;
   border-radius: 6px;
+  display: table;
+  margin: 1.8rem 0;
   overflow: hidden;
+  width: 100%;
 }
 
 .main-content table th {
-  background-color: var(--limitcode-surface);
-  border: 1px solid var(--limitcode-border);
-  color: var(--limitcode-orange);
+  background-color: #241d18 !important;
+  border: 1px solid var(--limitcode-border) !important;
+  color: var(--limitcode-orange) !important;
+  font-size: 0.95rem;
   font-weight: 700;
-  padding: 0.65rem 0.9rem;
+  padding: 0.75rem 1rem;
   text-align: left;
 }
 
 .main-content table td {
-  border: 1px solid var(--limitcode-border);
-  color: var(--limitcode-beige);
-  padding: 0.6rem 0.9rem;
+  border: 1px solid var(--limitcode-border) !important;
+  color: var(--limitcode-beige) !important;
+  padding: 0.7rem 1rem;
 }
 
 .main-content table tr:nth-child(even) {
-  background-color: rgba(255, 120, 40, 0.03);
+  background-color: rgba(255, 120, 40, 0.07) !important;
 }
 
-/* Hero Section */
+/* =========================================
+   Hero Section
+   ========================================= */
 .hero {
   padding: 4.5rem 0 3.5rem;
   max-width: 52rem;
@@ -131,18 +240,18 @@ figure.highlight {
 
 .eyebrow {
   color: var(--limitcode-orange);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
 }
 
 .hero h1 {
+  color: var(--limitcode-beige-light) !important;
   font-size: clamp(2.8rem, 8vw, 5.2rem);
   letter-spacing: -0.05em;
   line-height: 1.05;
   margin: 1rem 0 1.5rem;
-  color: var(--limitcode-beige-light) !important;
 }
 
 .hero h1 span {
@@ -150,7 +259,7 @@ figure.highlight {
 }
 
 .hero-copy {
-  color: var(--limitcode-beige);
+  color: var(--limitcode-beige) !important;
   font-size: 1.25rem;
   line-height: 1.7;
   max-width: 44rem;
@@ -159,66 +268,37 @@ figure.highlight {
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.85rem;
+  gap: 0.9rem;
   margin-top: 2.2rem;
 }
 
-.btn {
-  border-radius: 0.4rem;
-  display: inline-block;
-  font-weight: 700;
-  font-size: 0.95rem;
-  padding: 0.75rem 1.2rem;
-  text-decoration: none !important;
-  transition: all 0.15s ease;
-}
-
-.btn-primary {
-  background: var(--limitcode-orange);
-  border: 1px solid var(--limitcode-orange);
-  color: #0e0d0b !important;
-}
-
-.btn-primary:hover {
-  background: var(--limitcode-orange-hover);
-  border-color: var(--limitcode-orange-hover);
-}
-
-.btn-secondary {
-  background: var(--limitcode-surface);
-  border: 1px solid var(--limitcode-border);
+/* =========================================
+   Callouts & Visual Media
+   ========================================= */
+.docs-note {
+  background: rgba(255, 120, 40, 0.1) !important;
+  border: 1px solid rgba(255, 120, 40, 0.3) !important;
+  border-left: 5px solid var(--limitcode-orange) !important;
+  border-radius: 4px;
   color: var(--limitcode-beige) !important;
+  line-height: 1.6;
+  margin: 1.8rem 0;
+  padding: 1rem 1.25rem;
 }
 
-.btn-secondary:hover {
-  background: #231e1a;
-  border-color: var(--limitcode-orange);
-  color: var(--limitcode-beige-light) !important;
-}
-
-/* Visual Media Styling */
 .docs-gif,
 .docs-media {
   border: 1px solid var(--limitcode-border);
   border-radius: 6px;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.55);
   display: block;
   height: auto;
-  margin: 1.5rem 0;
+  margin: 2rem 0;
   max-width: 100%;
-}
-
-.docs-note {
-  background: rgba(255, 120, 40, 0.08);
-  border-left: 4px solid var(--limitcode-orange);
-  border-radius: 0 4px 4px 0;
-  color: var(--limitcode-beige);
-  margin: 1.5rem 0;
-  padding: 0.85rem 1.1rem;
 }
 
 @media (max-width: 700px) {
   .hero {
-    padding-top: 2.5rem;
+    padding-top: 2rem;
   }
 }
