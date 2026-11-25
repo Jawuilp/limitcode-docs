@@ -10,6 +10,8 @@ color_scheme: dark
 search_enabled: true
 heading_anchors: true
 aux_links:
+  "Limitcode Pro — Black Friday ($25)":
+    - "https://limitcode.jawuil.dev/?utm_source=github&utm_medium=docs"
   "Limitcode on GitHub":
     - "https://github.com/Jawuilp/Limitcode"
 aux_links_new_tab: true

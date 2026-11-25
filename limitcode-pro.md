@@ -7,9 +7,13 @@ permalink: /limitcode-pro/
 
 # Limitcode Pro
 
+<div class="docs-note">
+  <strong>Black Friday Offer ($25 instead of $29):</strong> Get Limitcode Pro for a one-time payment of <strong>$25</strong> ($4 off early access) using discount code <code>LIMITCODE2026</code>. <a href="https://pjawuil.gumroad.com/l/limitcode/LIMITCODE2026?wanted=true">Claim the $25 Black Friday offer &rarr;</a>
+</div>
+
 [Limitcode Pro](https://limitcode.jawuil.dev/?utm_source=github&utm_medium=docs)
 is the fully autonomous version of Limitcode. It keeps the same
-editor-native workflow as Limitcode OSS and adds capabilities for working
+editor-native workflow as Limitcode OSS (including **Inline Assist** in v1.2.0) and adds capabilities for working
 across a project.
 
 ## What Pro adds
@@ -33,4 +37,4 @@ with files you have open and exposes a small, reviewable tool surface.
 Limitcode Pro is the autonomous product for project-wide work. Both keep the
 editor-native workflow inside Sublime Text.
 
-[Learn more about Limitcode Pro](https://limitcode.jawuil.dev/?utm_source=github&utm_medium=docs).
+[Learn more about Limitcode Pro](https://limitcode.jawuil.dev/?utm_source=github&utm_medium=docs) or [get Limitcode Pro for $25 with code `LIMITCODE2026`](https://pjawuil.gumroad.com/l/limitcode/LIMITCODE2026?wanted=true).

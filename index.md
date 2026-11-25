@@ -20,6 +20,10 @@ permalink: /
   <strong>New in v1.2.0:</strong> <strong>Inline Assist</strong> is now live! Generate, edit, and refactor code directly inside your buffer with real-time diff previews inspired by Zed and GitHub Copilot. <a href="{{ site.baseurl }}/features/#inline-assist-in-buffer-ai-transformation">Explore Inline Assist &rarr;</a>
 </div>
 
+<div class="docs-note">
+  <strong>Black Friday on Limitcode Pro:</strong> Get the full autonomous coding agent for Sublime Text (project-wide search, terminal commands, MCP, skills, subagents &amp; Inline Assist) for <strong>$25</strong> instead of $29 (one-time payment) with code <code>LIMITCODE2026</code>. <a href="https://limitcode.jawuil.dev/?utm_source=github&utm_medium=docs">Learn more</a> or <a href="https://pjawuil.gumroad.com/l/limitcode/LIMITCODE2026?wanted=true">claim the $25 offer &rarr;</a>
+</div>
+
 ## The small tool surface is the feature
 
 Limitcode deliberately gives the agent only three tools:
@@ -52,7 +56,7 @@ No hidden filesystem scans. No unauthorized shell access. No autopilot. You stee
 * **Persistent Sessions:** Multi-session history, `@`-file references, and reasoning controls.
 * **LSP Integration:** Automated post-edit diagnostics when the Sublime LSP package is active.
 
-> Want an autonomous agent with project-wide search, terminal commands, web search, skills, and MCP tools? Check out [Limitcode Pro](https://limitcode.jawuil.dev/).
+> Want an autonomous agent with project-wide search, terminal commands, web search, skills, and MCP tools? Check out [Limitcode Pro](https://limitcode.jawuil.dev/?utm_source=github&utm_medium=docs) — currently **$25** (instead of $29, one-time) for Black Friday with code **`LIMITCODE2026`**.
 
 ---
 
